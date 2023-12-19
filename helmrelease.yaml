@@ -1,0 +1,18 @@
+apiVersion: configsync.gke.io/v1beta1
+kind: RootSync
+metadata:
+  name: prometheus
+  namespace: config-management-system
+spec:
+  sourceFormat: unstructured
+  sourceType: helm
+  helm:
+    repo: https://github.com/prometheus-community/helm-charts.git
+    dir: charts/kube-prometheus-stack
+    chart: kube-prometheus-stack
+    version: 55.5.0
+    releaseName: testing
+    namespace: default
+    # Use the optional field spec.helm.values to override default values.
+    # You can use the same format as the default values file to override
+    # default values.

@@ -6,6 +6,8 @@ metadata:
 spec:
   sourceFormat: unstructured
   sourceType: git
+  override:
+    enableShellInRendering: true
   git:
     repo: git@github.com:procter-gamble/k8s-kyverno.git
     dir: charts

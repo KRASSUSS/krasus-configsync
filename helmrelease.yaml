@@ -10,7 +10,6 @@ spec:
     repo: git@github.com:procter-gamble/k8s-kyverno.git
     dir: charts
     branch: krasus-configsync
-    namespace: default
     auth: ssh
     secretRef:
       name: kyverno-secret

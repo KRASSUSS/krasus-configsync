@@ -10,7 +10,7 @@ spec:
     enableShellInRendering: true
   git:
     repo: git@github.com:procter-gamble/k8s-kyverno.git
-    dir: charts/kyverno-system
+    # dir: charts/kyverno-system
     branch: krasus-configsync
     auth: ssh
     secretRef:

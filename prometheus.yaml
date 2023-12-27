@@ -1,0 +1,6 @@
+helmCharts:
+- name: prometheus
+  repo: https://github.com/prometheus-community/helm-charts/tree/main/charts/prometheus
+  releaseName: test
+  namespace: kyverno-system
+  

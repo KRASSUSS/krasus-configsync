@@ -6,6 +6,8 @@
 
 apiVersion: builtin
 kind: HelmChartInflationGenerator
+metadata:
+  name: prometheus
 name: minecraft
 repo: https://github.com/prometheus-community/helm-charts/tree/main/charts/prometheus
 releaseName: test

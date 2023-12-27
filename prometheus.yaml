@@ -1,6 +1,14 @@
-helmCharts:
-- name: prometheus
-  repo: https://github.com/prometheus-community/helm-charts/tree/main/charts/prometheus
-  releaseName: test
-  namespace: kyverno-system
-  
+# helmCharts:
+# - name: prometheus
+#   repo: https://github.com/prometheus-community/helm-charts/tree/main/charts/prometheus
+#   releaseName: test
+#   namespace: kyverno-system
+
+apiVersion: builtin
+kind: HelmChartInflationGenerator
+metadata:
+  name: myMap
+name: minecraft
+repo: https://github.com/prometheus-community/helm-charts/tree/main/charts/prometheus
+releaseName: test
+namespace: kyverno-system

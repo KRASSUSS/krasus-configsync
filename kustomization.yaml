@@ -6,7 +6,7 @@
 #   namespace: kyverno-system
 helmCharts:
 - name: prometheus
-  repo: https://github.com/prometheus-community/helm-charts/tree/main/charts/prometheus
+  repo: https://github.com/prometheus-community/helm-charts/tree/main/charts
   releaseName: test
   namespace: kyverno-system
   includeCRDs: true

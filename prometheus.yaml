@@ -1,6 +1,23 @@
+# helmCharts:
+# - name: prometheus
+#   repo: https://github.com/prometheus-community/helm-charts/tree/main/charts/prometheus
+#   releaseName: test
+#   namespace: kyverno-system
+#   includeCRDs: true
+
+# ./base/kustomization.yaml
+
+
+# helmCharts:
+# - name: cert-manager
+#   repo: https://charts.jetstack.io
+#   version: v1.5.3
+#   releaseName: my-cert-manager
+#   namespace: cert-manager
+
 helmCharts:
-- name: prometheus
-  repo: https://github.com/prometheus-community/helm-charts/tree/main/charts/prometheus
-  releaseName: test
-  namespace: kyverno-system
-  includeCRDs: true
+- name: cert-manager
+  repo: https://charts.jetstack.io
+  version: v1.5.3
+  releaseName: my-cert-manager
+  namespace: cert-manager
